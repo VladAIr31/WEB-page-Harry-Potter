@@ -1,0 +1,49 @@
+body{
+
+    background-image: url('ca.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  
+}
+html,body
+{
+    height: 100%;
+    margin: 0;
+}
+.exit-link a {
+    color:red;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+    
+  }
+  
+  .exit-link a:hover {
+    background-color:red;
+    color: black;
+    text-transform: uppercase;
+  }
+  .start-game {
+    text-align: center;
+    
+}
+
+#startButton {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#startButton:hover {
+    background-color: darkgreen;
+}
+

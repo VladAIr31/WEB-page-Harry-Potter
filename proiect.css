@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+@font-face {
+    font-family: Harry;
+    src: url(harry-p-font/HarryP-MVZ6w.ttf);
+}
+body{
+    padding: 0 0 1em;
+    background-color:rgb(9, 114, 9);
+}
+
+header
+{
+    text-transform: uppercase;
+    font-family:Harry;
+
+}
+header .title{
+display: flex;
+font-size:300%;
+color: gold;
+padding: 1em;
+justify-content: center;
+}
+
+.menu-container {
+position: relative;
+text-align: center;
+  
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+  position: relative; 
+}
+
+.menu-icon span {
+  display: block;
+  background:gold;
+  height: 4px;
+  width: 100%;
+  margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.menu {
+  display: none;
+  
+  position: relative;
+  background:gold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 2%;
+  z-index: 100;
+  width: 36%;
+  margin-right: 32%;
+  margin-left:32%;
+ 
+ 
+}
+
+.menu ul {
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;
+list-style: none; 
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  margin: 2%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color:#f92420;
+  font-size: xx-large;
+}
+.menu ul li a:hover
+{
+font-weight: bold;
+
+
+}
+#menu-toggle:checked ~ .menu {
+  display: block;
+}
+#menu-toggle:checked ~ main 
+{
+  margin-top: 300px;
+  transition: margin-top 0.3s ease ;
+}
+.menu ul li:last-of-type a
+{
+  color: black;
+}
+.intro
+{
+  color:gold;
+  padding: 3%;
+  text-wrap: wrap;
+  font-size: 150%;
+  
+
+}
+main {
+  margin-top: 0;
+  transition: margin-top 0.3s ease; 
+}
+
+
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0 0 0.5em; 
+  }
+
+  .intro {
+    padding: 5%; 
+    font-size: 90%; 
+  }
+
+  .menu ul {
+    flex-direction: column; 
+  }
+
+  #menu-toggle:checked ~ main {
+    margin-top: 180px; 
+  }
+}
+h1
+{ display: table;
+  color: #f92420;
+  margin-left: 2em;
+  text-transform: uppercase;
+  font-family:Harry;
+  background-color: gold;
+  padding: 1%;
+}
+.rez
+{
+  padding: 3%;
+  color:gold;
+  font-style: italic;
+  font-size: 125%;
+}
+.motiv
+{
+padding: 2%;
+  color:gold;
+  font-size: 150%;
+}
+.motiv ol li
+{
+font-weight: bold;
+}
+.motiv ol li:nth-of-type(3) a{
+  color: orangered;
+}
+.motiv ol li p
+{
+  font-weight: normal;
+}
+h2 a
+{ 
+  font-family:Harry;
+  color: blue;
+  font-size:xx-large;
+  display: flex;
+  justify-content: center;
+ 
+}
+h2 a:hover
+{
+  background-color: black;
+  color:red;
+  text-transform: uppercase;
+}

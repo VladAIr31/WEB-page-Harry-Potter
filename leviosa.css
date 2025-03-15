@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Harry;
+    src: url(harry-p-font/HarryP-MVZ6w.ttf);
+}
+.legend {
+  display: grid;
+  grid-template-columns: 1fr; 
+  
+  position: absolute; 
+  top: 20px; 
+  left: 20px; 
+}
+
+.legend p {
+  color:gold;
+  font-style: italic;
+  font-size: xx-large;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.exit-link a {
+    color:gold;
+    text-decoration: none;
+
+    font-size: 10px;
+    padding: 10px;
+position:absolute;
+top: 20px;
+right: 20px;
+    border-radius: 5px;
+    
+  }
+  
+  .exit-link a:hover {
+    background-color:gold;
+    color: green;
+    text-transform: uppercase;
+  }
+body
+{
+    
+        background-color:green;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+        position: relative;
+    
+}
+.wand {
+    width: 10px;
+    height: 200px;
+    background-color: #8b4513; 
+    border-radius: 5px;
+    position: absolute;
+     margin-bottom: 10%;
+    left: 10%; 
+    transform: rotate(45deg); 
+    box-shadow: 0 0 5px 2px orangered; 
+  }
+  .egg {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50% 50% 40% 40%; 
+ margin-bottom: 10%;
+ animation: moveUpDown 4s ease-in-out infinite
+  }
+ 
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0); 
+    }
+    20% {
+      transform: translateY(-50px); 
+    }
+    40%
+    {
+        transform: translateY(-50px); 
+    }
+    45%
+    {
+      
+transform: translateY(-100px) scale(0.8);
+    }
+    70%
+{
+    transform: translateY(-400px)scale(0.4);
+}
+    100% {
+      transform: translateY(0); 
+    }
+  }
+  h1{
+    color:gold;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: Harry;
+    
+  }
+  h2{
+
+    color: red
+    position:absolute;
+    top: 20px;
+    left: 20px;
+  }
