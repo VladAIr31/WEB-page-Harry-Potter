@@ -1,8 +1,6 @@
 # WEB-page-Harry-Potter
-The main page is proiect.html which has a short resume of the second Harry Potter book.
+A web page featuring a summary of the second Harry Potter book, built using HTML, CSS, and JavaScript.
 
-"Camera secretelor" from the menu has a snake game with Harry Potter Caracters.
+The page includes multiple hidden sections, such as the Chamber of Secrets, where a Snake game features characters from the book along with their images. As each character is "eaten," they become part of the snake’s tail.
 
-The end of the main page contains a link to a forum wich determines the house of the person who completes it based of the questions.
-
-You can also see the previos persons who completed the forum before, these datas are saved in local storage
+It also includes a form that, based on the selected answers, sorts you into one of the four Hogwarts houses. On the form page, there's also a link to view previous quiz results, which are stored in local storage.
